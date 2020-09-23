@@ -22,7 +22,7 @@ public class Configuration {
     // 配置信息Map
     private static Map<String,Object> applicationConfig = new HashMap<>();
 
-    public final static String classPath = Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
+    public static final String classPath = Objects.requireNonNull(Thread.currentThread().getContextClassLoader()
             .getResource("")).getPath();
 
     /**

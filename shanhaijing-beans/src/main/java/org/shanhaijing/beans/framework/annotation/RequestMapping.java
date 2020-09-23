@@ -9,4 +9,6 @@ public @interface RequestMapping {
 
     String value() default "";
 
+    RequestMethod[] method() default {};
+
 }

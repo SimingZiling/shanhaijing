@@ -12,7 +12,7 @@ import java.util.Map;
 public class HandlerMapping {
 
 
-    private static Map<String,Handler> handlerMap = new HashMap<String,Handler>();
+    private static Map<String,Handler> handlerMap = new HashMap<>();
 
     public static Handler getHandler(String url) {
         return handlerMap.get(url);
@@ -51,7 +51,11 @@ public class HandlerMapping {
                     Handler handler = new Handler();
                     handler.setObject(object);
                     handler.setMethod(method);
+                    // 封装请求头
+                    handler.setRequestMethods(methodRequestMapping.method());
                     String url = (classRequestMappingNmae+methodRequestMappingNmae).replaceAll("/+","/");
+
+
                     handlerMap.put(url,handler);
                 }
             }

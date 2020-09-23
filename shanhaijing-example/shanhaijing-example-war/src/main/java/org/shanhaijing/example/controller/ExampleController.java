@@ -1,9 +1,6 @@
 package org.shanhaijing.example.controller;
 
-import org.shanhaijing.beans.framework.annotation.Autowirted;
-import org.shanhaijing.beans.framework.annotation.Controller;
-import org.shanhaijing.beans.framework.annotation.RequestMapping;
-import org.shanhaijing.beans.framework.annotation.RequestParam;
+import org.shanhaijing.beans.framework.annotation.*;
 import org.shanhaijing.example.service.ExampleService;
 
 @Controller

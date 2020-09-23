@@ -26,8 +26,6 @@ public class DispatcherServlet extends HttpServlet {
         String url = req.getRequestURI().replaceAll(contextPath,"").replaceAll("/+","/");
         // 封装请求
         Request request = encapsulatedRequest(req);
-        System.out.println(req.getMethod());
-        // TODO 未验证请求方式
 
         // 通过HandlerMapping获取到对应的Handler
         Handler handler =  HandlerMapping.getHandler(url);
@@ -50,6 +48,11 @@ public class DispatcherServlet extends HttpServlet {
         }
     }
 
+    /**
+     * 封装Request
+     * @param httpServletRequest httpServletRequest请求
+     * @return Request
+     */
     private Request encapsulatedRequest(HttpServletRequest httpServletRequest){
         Request request = new Request();
         // 添加请求参数
@@ -62,7 +65,8 @@ public class DispatcherServlet extends HttpServlet {
             requestHeaderMap.put(headName,httpServletRequest.getHeader(headName));
         }
         request.setRequestHeaderMap(requestHeaderMap);
-
+        // 添加请求方式
+        request.setRequestMethod(httpServletRequest.getMethod());
         return request;
     }
 
