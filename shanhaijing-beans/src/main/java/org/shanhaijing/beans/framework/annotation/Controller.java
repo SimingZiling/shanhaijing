@@ -1,4 +1,4 @@
-package org.shanhaijing.beans.annotation;
+package org.shanhaijing.beans.framework.annotation;
 
 import java.lang.annotation.*;
 
@@ -6,9 +6,8 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @org.yiming.networkworkbench.framework.beans.annotation.Bean
-public @interface Service {
+public @interface Controller {
 
-    // bean名称
     String value() default "";
 
 }

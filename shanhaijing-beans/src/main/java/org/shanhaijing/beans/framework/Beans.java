@@ -1,4 +1,4 @@
-package org.shanhaijing.beans;
+package org.shanhaijing.beans.framework;
 
 import java.util.ArrayList;
 import java.util.HashMap;

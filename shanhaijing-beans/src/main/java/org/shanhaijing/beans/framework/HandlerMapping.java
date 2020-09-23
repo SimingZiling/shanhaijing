@@ -1,6 +1,6 @@
-package org.shanhaijing.beans;
+package org.shanhaijing.beans.framework;
 
-import org.shanhaijing.beans.annotation.RequestMapping;
+import org.shanhaijing.beans.framework.annotation.RequestMapping;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

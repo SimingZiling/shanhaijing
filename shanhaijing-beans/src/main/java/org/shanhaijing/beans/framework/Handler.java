@@ -1,7 +1,7 @@
-package org.shanhaijing.beans;
+package org.shanhaijing.beans.framework;
 
 
-import org.shanhaijing.beans.annotation.RequestParam;
+import org.shanhaijing.beans.framework.annotation.RequestParam;
 import org.shanhaijing.config.Request;
 
 import java.lang.reflect.InvocationTargetException;

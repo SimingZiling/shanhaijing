@@ -1,4 +1,4 @@
-package org.shanhaijing.beans.annotation;
+package org.shanhaijing.beans.framework.annotation;
 
 import java.lang.annotation.*;
 

@@ -1,4 +1,4 @@
-package org.shanhaijing.beans;
+package org.shanhaijing.beans.framework;
 
 /**
  * 构造Bean基础信息

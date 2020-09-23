@@ -1,13 +1,13 @@
-package org.shanhaijing.beans.annotation;
+package org.shanhaijing.beans.framework.annotation;
 
 import java.lang.annotation.*;
 
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@org.yiming.networkworkbench.framework.beans.annotation.Bean
-public @interface Controller {
+public @interface Bean {
 
+    // bean名称
     String value() default "";
 
 }

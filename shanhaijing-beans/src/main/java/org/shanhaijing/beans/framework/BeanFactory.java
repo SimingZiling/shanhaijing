@@ -1,9 +1,9 @@
-package org.shanhaijing.beans;
+package org.shanhaijing.beans.framework;
 
-import org.shanhaijing.beans.annotation.Autowirted;
-import org.shanhaijing.beans.annotation.Bean;
-import org.shanhaijing.beans.annotation.Controller;
-import org.shanhaijing.beans.annotation.Service;
+import org.shanhaijing.beans.framework.annotation.Autowirted;
+import org.shanhaijing.beans.framework.annotation.Bean;
+import org.shanhaijing.beans.framework.annotation.Controller;
+import org.shanhaijing.beans.framework.annotation.Service;
 import org.shanhaijing.config.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
