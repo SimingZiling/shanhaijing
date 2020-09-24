@@ -1,7 +1,7 @@
 package org.shanhaijing.example.service.impl;
 
-import org.shanhaijing.beans.framework.annotation.Service;
 import org.shanhaijing.example.service.ExampleService;
+import org.shanhaijing.framework.beans.annotation.Service;
 
 
 @Service

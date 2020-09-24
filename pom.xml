@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>shanhaijing-core</module>
+        <module>shanhaijing-web</module>
         <module>shanhaijing-example</module>
-        <module>shanhaijing-beans</module>
-        <module>shanhaijing-config</module>
-        <module>shanhaijing-servlet</module>
     </modules>
 
     <properties>
@@ -40,13 +39,7 @@
 
             <dependency>
                 <groupId>org.shanhaijing</groupId>
-                <artifactId>shanhaijing-config</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.shanhaijing</groupId>
-                <artifactId>shanhaijing-servlet</artifactId>
+                <artifactId>shanhaijing-core</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 

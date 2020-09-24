@@ -25,7 +25,8 @@
     <dependencies>
         <dependency>
             <groupId>org.shanhaijing</groupId>
-            <artifactId>shanhaijing-servlet</artifactId>
+            <artifactId>shanhaijing-web-servlet</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
