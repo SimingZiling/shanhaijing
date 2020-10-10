@@ -20,7 +20,6 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
         // 获取上下文地址（项目名称）
         String contextPath = req.getContextPath();
         // 获取URL地址  先获取URI 然后通过上下文地址截取出URL 再讲多余的/ 去除
@@ -34,6 +33,7 @@ public class DispatcherServlet extends HttpServlet {
         if(Configuration.verifyConfig("characterEncoding")){
             resp.setCharacterEncoding(String.valueOf(Configuration.getConfig("characterEncoding")));
         }else {
+            resp.setContentType("text/html;charset=utf-8");
             resp.setCharacterEncoding("UTF-8");
         }
         if(handler == null){

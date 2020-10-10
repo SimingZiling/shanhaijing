@@ -12,6 +12,7 @@
         <module>shanhaijing-core</module>
         <module>shanhaijing-web</module>
         <module>shanhaijing-example</module>
+        <module>taotie-orm</module>
     </modules>
 
     <properties>

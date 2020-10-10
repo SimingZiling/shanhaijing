@@ -9,11 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shanhaijing-web</artifactId>
+    <artifactId>taotie-orm</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>shanhaijing-web-servlet</module>
-        <module>shanhaijing-web-netty</module>
+        <module>taotie-orm-core</module>
     </modules>
 
 
